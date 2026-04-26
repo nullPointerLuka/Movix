@@ -6,11 +6,6 @@ let busquedaActiva = "";
 
 // FETCH
 
-fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
-  .then(res => res.text())
-  .then(text => {
-    console.log(text); 
-  });
 
 fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
   .then(response => response.json())
