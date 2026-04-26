@@ -5,7 +5,7 @@ let ordenActivo = "ninguno";
 let busquedaActiva = "";
 
 // FETCH
-fetch("/COMPONENTES/BD/movies.json")
+fetch("/Movix/COMPONENTES/BD/movies.json")
   .then(response => response.json())
   .then(data => {
     peliculasGlobal = data.movies;
