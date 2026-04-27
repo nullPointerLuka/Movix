@@ -23,7 +23,8 @@ function mostrarDetalle(movie) {
 
 if (movie.video) {
   bg.innerHTML = "";
-
+console.log(movie.video);
+console.log(asset(movie.video));
   
   const video = document.createElement("video");
   video.src = asset(movie.video);
