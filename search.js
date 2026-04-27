@@ -1,3 +1,9 @@
+const BASE_URL = "https://nullpointerluka.github.io/Movix/";
+
+function asset(path) {
+  return BASE_URL + path.replace(/^\/+/, "");
+}
+
 let peliculasGlobal = [];
 
 fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
@@ -50,7 +56,7 @@ function mostrarResultados(lista) {
   lista.slice(0, 5).forEach(movie => {
     resultsBox.innerHTML += `
       <div class="nt-search-item" onclick="irDetalle(${movie.id})">
-        <img src="${movie.imagen}">
+        <img src="${asset(movie.imagen)}">
         <div class="nt-search-info">
           <span class="nt-search-title">${movie.titulo}</span>
           <div class="nt-search-rating">⭐ ${movie.rating}</div>
