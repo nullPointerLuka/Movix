@@ -1,10 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const BASE_URL = "https://nullpointerluka.github.io/Movix/";
 
-function asset(path) {
-  return new URL(path, BASE_URL).href;
-}
 
 fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
   .then(response => response.json())
