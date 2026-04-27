@@ -1,7 +1,12 @@
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-fetch("../BD/movies.json")
+fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
+  .then(response => response.json())
+  .then(data => {
+    peliculasGlobal = data.movies;
+    aplicarFiltros();
+  });")
   .then(res => res.json())
   .then(data => {
     const movie = data.movies.find(m => m.id == id);
