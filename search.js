@@ -1,6 +1,6 @@
 let peliculasGlobal = [];
 
-fetch("../BD/movies.json")
+fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
   .then(res => res.json())
   .then(data => {
     peliculasGlobal = data.movies;
