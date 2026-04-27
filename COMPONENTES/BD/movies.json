@@ -42,7 +42,7 @@
       "id": 2,
       "titulo": "Inception",
       "imagen": "COMPONENTES/BD/img/Inception/Portada/Inception.jpg",
-      "video": "COMPONENTES/BD/img/Inception/Video/inception.mp4",
+      "video": "COMPONENTES/BD/img/Inception/Video/Inception.mp4",
       "descripcionCorta": "Un ladrón entra en los sueños para robar secretos.",
       "sinopsis": "Dom Cobb es un experto en infiltrarse en los sueños de las personas para extraer información valiosa. Su vida cambia cuando recibe la misión de implantar una idea en lugar de robarla. A medida que profundiza en múltiples niveles de sueño, la línea entre la realidad y la ilusión comienza a desdibujarse.",
       "genero": ["Acción", "Ficción", "Suspenso"],
