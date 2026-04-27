@@ -1,5 +1,10 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
+const BASE_URL = "https://nullpointerluka.github.io/Movix/";
+
+function asset(path) {
+  return new URL(path, BASE_URL).href;
+}
 
 fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
   .then(response => response.json())
@@ -21,7 +26,7 @@ if (movie.video) {
 
   
   const video = document.createElement("video");
-  video.src = movie.video;
+  video.src = asset(movie.video);
   video.autoplay = true;
   video.muted = true;
   video.loop = true;
@@ -162,8 +167,7 @@ contenedorBadges.innerHTML = htmlBadges;
 
   // POSTER
 
-  document.querySelector(".nt-poster-img-wrap img").src = movie.imagen;
-
+document.querySelector(".nt-poster-img-wrap img").src = asset(movie.imagen);
   let generosHTML = "";
   movie.genero.forEach(g => {
     generosHTML += `<span class="nt-genre-chip">${g}</span>`;
@@ -193,7 +197,7 @@ contenedorBadges.innerHTML = htmlBadges;
       <div class="col">
         <div class="nt-cast-card">
           <div class="nt-cast-img-wrap mb-2">
-            <img src="${actor.imagen}">
+            <img src="${asset(actor.imagen)}">
             <div class="nt-cast-overlay"></div>
           </div>
           <p class="nt-cast-name mb-0">${actor.nombre}</p>
