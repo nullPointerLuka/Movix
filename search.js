@@ -1,8 +1,3 @@
-const BASE_URL = "https://nullpointerluka.github.io/Movix/";
-
-function asset(path) {
-  return BASE_URL + path.replace(/^\/+/, "");
-}
 
 let peliculasGlobal = [];
 
