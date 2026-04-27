@@ -5,9 +5,6 @@ fetch("https://nullpointerluka.github.io/Movix/COMPONENTES/BD/movies.json")
   .then(response => response.json())
   .then(data => {
     peliculasGlobal = data.movies;
-
-    aplicarFiltros();
-
     const movie = data.movies.find(m => m.id == id);
     mostrarDetalle(movie);
   });
