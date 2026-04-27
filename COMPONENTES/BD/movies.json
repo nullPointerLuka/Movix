@@ -3,8 +3,8 @@
     {
       "id": 1,
       "titulo": "Arcane",
-      "imagen": "/Movix/COMPONENTES/BD/img/Arcane/Portada/arcane.jpg",
-      "video": "/Movix/COMPONENTES/BD/img/Arcane/Video/Arcane.mp4",
+      "imagen": "COMPONENTES/BD/img/Arcane/Portada/arcane.jpg",
+      "video": "COMPONENTES/BD/img/Arcane/Video/Arcane.mp4",
       "descripcionCorta": "Dos hermanas quedan atrapadas en un conflicto entre poder, tecnología y desigualdad.",
       "sinopsis": "En las ciudades de Piltover y Zaun, la tensión entre el progreso y la opresión crece cada día. Vi y Jinx, dos hermanas separadas por la tragedia, terminan en lados opuestos de un conflicto que involucra tecnología peligrosa y luchas de poder. Mientras alianzas se rompen y nuevas fuerzas emergen, cada decisión acerca más a la ciudad al caos.",
       "genero":["Animación","Acción","Drama"],
